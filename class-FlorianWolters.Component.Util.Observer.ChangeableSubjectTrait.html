@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Trait FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait | FlorianWolters\Component\Util\Observer</title>
+
+	<script type="text/javascript" src="resources/combined.js?819867491"></script>
+	<script type="text/javascript" src="elementlist.js?647790937"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FlorianWolters.html">FlorianWolters<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.html">Component<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.Util.html">Util<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.Util.Observer.html">Observer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectInterface.html">ChangeableSubjectInterface</a></li>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">ObserverInterface</a></li>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.SubjectInterface.html">SubjectInterface</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li class="active"><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">ChangeableSubjectTrait</a></li>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html">SubjectTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-FlorianWolters.Component.Util.Observer.html" title="Summary of FlorianWolters\Component\Util\Observer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="florianwolters-component-util-observer-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Trait ChangeableSubjectTrait</h1>
+
+
+	<div class="description">
+	
+<p>The trait <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait</a></code> represents an observable object, or
+"data" in the model-view paradigm.</p>
+
+<p>It can be used to represent an object that the application wants to have
+observed.</p>
+
+<p>An observable object can have one or more observers. An observer may be any
+object that implements interface <code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code>. After an observable
+instance changes, an application calling the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait</a></code>'s
+<code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_notify">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::notify()</a></code> method causes all of its observers to be notified of he change by
+a call to their update method.</p>
+
+<p>The order in which notifications will be delivered is unspecified. The
+default implementation provided in the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait</a></code> trait will
+notify observers in the order in which they registered interest, but using
+classes may change this order, use no guaranteed order, or may guarantee that
+their subclass follows this order, as they choose.</p>
+
+<p>When an observable object is newly created, its set of observers is
+empty.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait</span></b>			
+			
+			 uses 
+				<a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html"><span>FlorianWolters\Component\Util\Observer\SubjectTrait</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FlorianWolters.html">FlorianWolters</a>\<a href="namespace-FlorianWolters.Component.html">Component</a>\<a href="namespace-FlorianWolters.Component.Util.html">Util</a>\<a href="namespace-FlorianWolters.Component.Util.Observer.html">Observer</a><br />
+		
+
+				<b>Copyright:</b>
+				2010-2013 Florian Wolters<br />
+				<b>License:</b>
+				<a href="http://gnu.org/licenses/lgpl.txt">LGPL-3.0+</a><br />
+				<b>Author:</b>
+				Florian Wolters &lt;<a
+href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<br />
+				<b>Since:</b>
+				Trait available since Release 0.1.0<br />
+				<b>Link:</b>
+				<a href="http://github.com/FlorianWolters/PHP-Component-Util-Observer">http://github.com/FlorianWolters/PHP-Component-Util-Observer</a><br />
+		<b>Located at</b> FlorianWolters/Component/Util/Observer/ChangeableSubjectTrait.php<br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="hasChanged" id="_hasChanged">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasChanged">#</a>
+		<code>hasChanged( )</code>
+
+		<div class="description short">
+			
+<p>Checks whether this object has changed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks whether this object has changed.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br><code>true</code> if and only if the setChanged method has been called
+more recently than the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_clearChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::clearChanged()</a></code> method on this object;
+<code>false</code> otherwise.<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_clearChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::clearChanged()</a></code></code><br />
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_markChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::markChanged()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="markChanged" id="_markChanged">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_markChanged">#</a>
+		<code>markChanged( )</code>
+
+		<div class="description short">
+			
+<p>Marks this object as having been changed; the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_hasChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::hasChanged()</a></code> method will
+now return <code>true</code>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Marks this object as having been changed; the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_hasChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::hasChanged()</a></code> method will
+now return <code>true</code>.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="notify" id="_notify">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_notify">#</a>
+		<code>notify( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>If this object has changed then notify all of its observers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>If this object has changed then notify all of its observers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code><br>$data The optional data to pass to the <code>update</code> method of the
+observers.</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_clearChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::clearChanged()</a></code></code><br />
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_hasChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::hasChanged()</a></code></code><br />
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html#_update">FlorianWolters\Component\Util\Observer\ObserverInterface::update()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearChanged" id="_clearChanged">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearChanged">#</a>
+		<code>clearChanged( )</code>
+
+		<div class="description short">
+			
+<p>Indicates that this object has no longer changed, or that it has already
+notified all of its observers of its most recent change, so that the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_hasChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::hasChanged()</a></code> method will now return <code>false</code>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Indicates that this object has no longer changed, or that it has already
+notified all of its observers of its most recent change, so that the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_hasChanged">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::hasChanged()</a></code> method will now return <code>false</code>.</p>
+
+<p>This method is called automatically by the <code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_notify">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::notify()</a></code> method.</p>
+
+
+
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html#_notify">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait::notify()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#methods">FlorianWolters\Component\Util\Observer\SubjectTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#_attach">()</a>, 
+			<a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#_count">()</a>, 
+			<a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#_detach">()</a>, 
+			<a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#_detachAll">()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		FlorianWolters\Component\Util\Observer API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

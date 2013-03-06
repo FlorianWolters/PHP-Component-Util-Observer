@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Trait FlorianWolters\Component\Util\Observer\SubjectTrait | FlorianWolters\Component\Util\Observer</title>
+
+	<script type="text/javascript" src="resources/combined.js?819867491"></script>
+	<script type="text/javascript" src="elementlist.js?647790937"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FlorianWolters.html">FlorianWolters<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.html">Component<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.Util.html">Util<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-FlorianWolters.Component.Util.Observer.html">Observer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectInterface.html">ChangeableSubjectInterface</a></li>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">ObserverInterface</a></li>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.SubjectInterface.html">SubjectInterface</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">ChangeableSubjectTrait</a></li>
+				<li class="active"><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html">SubjectTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-FlorianWolters.Component.Util.Observer.html" title="Summary of FlorianWolters\Component\Util\Observer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="florianwolters-component-util-observer-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Trait SubjectTrait</h1>
+
+
+	<div class="description">
+	
+<p>The trait <code><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html">FlorianWolters\Component\Util\Observer\SubjectTrait</a></code> represents an observable object, or "data" in
+the model-view paradigm.</p>
+
+<p>It can be used to represent an object that the application wants to have
+observed.</p>
+
+<p>An observable object can have one or more observers. An observer may be any
+object that implements interface <code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code>. After an observable
+instance changes, an application calling the <code><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html">FlorianWolters\Component\Util\Observer\SubjectTrait</a></code>'s <code><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html#_notify">FlorianWolters\Component\Util\Observer\SubjectTrait::notify()</a></code>
+method causes all of its observers to be notified of he change by a call to
+their update method.</p>
+
+<p>The order in which notifications will be delivered is unspecified. The
+default implementation provided in the <code><a href="class-FlorianWolters.Component.Util.Observer.SubjectTrait.html">FlorianWolters\Component\Util\Observer\SubjectTrait</a></code> trait will notify
+observers in the order in which they registered interest, but using classes may
+change this order, use no guaranteed order, or may guarantee that their subclass
+follows this order, as they choose.</p>
+
+<p>When an observable object is newly created, its set of observers is
+empty.</p>
+
+	</div>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct Known Users</h4>
+			<a href="class-FlorianWolters.Component.Util.Observer.ChangeableSubjectTrait.html">FlorianWolters\Component\Util\Observer\ChangeableSubjectTrait</a>
+	</div>
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FlorianWolters.html">FlorianWolters</a>\<a href="namespace-FlorianWolters.Component.html">Component</a>\<a href="namespace-FlorianWolters.Component.Util.html">Util</a>\<a href="namespace-FlorianWolters.Component.Util.Observer.html">Observer</a><br />
+		
+
+				<b>Copyright:</b>
+				2010-2013 Florian Wolters<br />
+				<b>License:</b>
+				<a href="http://gnu.org/licenses/lgpl.txt">LGPL-3.0+</a><br />
+				<b>Author:</b>
+				Florian Wolters &lt;<a
+href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<br />
+				<b>Since:</b>
+				Trait available since Release 0.1.0<br />
+				<b>Link:</b>
+				<a href="http://github.com/FlorianWolters/PHP-Component-Util-Observer">http://github.com/FlorianWolters/PHP-Component-Util-Observer</a><br />
+		<b>Located at</b> FlorianWolters/Component/Util/Observer/SubjectTrait.php<br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="attach" id="_attach">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attach">#</a>
+		<code>attach( <span><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code> <var>$observer</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds the given observer to the set of observers for this subject, provided
+that it is not the same as some observer already in the set.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds the given observer to the set of observers for this subject, provided
+that it is not the same as some observer already in the set.</p>
+
+<p>The order in which notifications will be delivered to multiple observers is
+not specified.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$observer</var></dt>
+					<dd><code><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code></code><br>$observer The <em>Observer</em> to be added.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detach" id="_detach">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detach">#</a>
+		<code>detach( <span><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code> <var>$observer</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Deletes the given observer from the set of observers of this subject.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Deletes the given observer from the set of observers of this subject.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$observer</var></dt>
+					<dd><code><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html">FlorianWolters\Component\Util\Observer\ObserverInterface</a></code></code><br>$observer The <em>Observer</em> to be deleted.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detachAll" id="_detachAll">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detachAll">#</a>
+		<code>detachAll( )</code>
+
+		<div class="description short">
+			
+<p>Clears the observer list so that this object no longer has any observers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clears the observer list so that this object no longer has any observers.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="notify" id="_notify">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_notify">#</a>
+		<code>notify( <span>mixed <var>$notifyInformation</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Notify all observers of this subject.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Notify all observers of this subject.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$notifyInformation</var></dt>
+					<dd><code>mixed</code><br>$data The optional data to pass to the <code>update</code> method of the
+observers.</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-FlorianWolters.Component.Util.Observer.ObserverInterface.html#_update">FlorianWolters\Component\Util\Observer\ObserverInterface::update()</a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code>count( )</code>
+
+		<div class="description short">
+			
+<p>Returns the number of observers of this object.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the number of observers of this object.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>The number of observers.<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		FlorianWolters\Component\Util\Observer API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
