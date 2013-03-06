@@ -1,0 +1,27 @@
+{
+    "name": "florianwolters/component-util-observer",
+    "description": "The Observer behavioural design pattern as a PHP component.",
+    "type": "library",
+    "keywords": ["observer", "subject", "utility", "pattern", "behavioural"],
+    "homepage": "http://github.com/FlorianWolters/PHP-Component-Util-Observer",
+    "license": "LGPL-3.0+",
+    "authors": [
+      {
+        "name": "Florian Wolters",
+        "email": "wolters.fl@gmail.com",
+        "homepage": "http://blog.florianwolters.de",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "FlorianWolters": [
+                "src/php",
+                "src/tests/mocks/php"
+            ]
+        }
+    }
+}
