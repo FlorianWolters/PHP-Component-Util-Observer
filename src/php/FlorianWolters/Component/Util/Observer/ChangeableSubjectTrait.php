@@ -70,16 +70,19 @@ trait ChangeableSubjectTrait
     /**
      * If this object has changed then notify all of its observers.
      *
+     * @param mixed $data The optional data to pass to the `update` method of
+     *                    the observers.
+     *
      * @return void
      *
      * @see clearChanged
      * @see hasChanged
      * @see ObserverInterface::update
      */
-    public function notify($notifyInformation = null)
+    public function notify($data = null)
     {
         if (true === $this->hasChanged()) {
-            $this->doNotify($notifyInformation);
+            $this->doNotify($data);
             $this->clearChanged();
         }
     }
